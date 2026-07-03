@@ -1,0 +1,148 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кованые ворота премиум класса</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Шрифты для красоты (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ШАПКА (Навигация) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">КОВАНЫЙ <span>СТИЛЬ</span></div>
+            <nav class="nav">
+                <a href="#catalog">Каталог</a>
+                <a href="#benefits">Почему мы</a>
+                <a href="#order">Контакты</a>
+            </nav>
+            <div class="phone">+7 (909) 473-21-21</div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН (Hero) -->
+    <section class="hero">
+        <div class="hero-overlay"></div> <!-- Затемнение для читаемости текста -->
+        <div class="container hero-content">
+            <h1>Элитные кованые ворота<br> <span>под ваш особняк</span></h1>
+            <p>Индивидуальный дизайн, ручная ковка, пожизненная гарантия</p>
+            <a href="#order" class="btn btn-primary">Заказать расчет</a>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ (Сетка с вашими работами) -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Наши <span>работы</span></h2>
+            <div class="catalog-grid">
+                
+                <!-- Карточка товара 1 -->
+                <div class="product-card">
+                    <img src="images/gate1.jpg" alt="Ворота классика"> <!-- Поменяйте на свою картинку -->
+                    <div class="product-info">
+                        <h3>Ворота "Классика"</h3>
+                        <p>Ковка, кованый узор "Виноградная лоза"</p>
+                        <div class="price">от 120 000 ₽</div>
+                        <a href="#order" class="btn btn-small">Заказать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 2 -->
+                <div class="product-card">
+                    <img src="images/gate2.jpg" alt="Ворота Модерн">
+                    <div class="product-info">
+                        <h3>Ворота "Модерн"</h3>
+                        <p>Геометрия, хромированные вставки</p>
+                        <div class="price">от 95 000 ₽</div>
+                        <a href="#order" class="btn btn-small">Заказать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 3 -->
+                <div class="product-card">
+                    <img src="images/gate3.jpg" alt="Ворота Империя">
+                    <div class="product-info">
+                        <h3>Ворота "Империя"</h3>
+                        <p>Монументальные, с позолотой</p>
+                        <div class="price">от 250 000 ₽</div>
+                        <a href="#order" class="btn btn-small">Заказать</a>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 4 -->
+                <div class="product-card">
+                    <img src="images/gate4.jpg" alt="Ворота Хай-Тек">
+                    <div class="product-info">
+                        <h3>Ворота "Хай-Тек"</h3>
+                        <p>Стекло, металл, автоматика</p>
+                        <div class="price">от 180 000 ₽</div>
+                        <a href="#order" class="btn btn-small">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают <span>нас</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">🔨</div>
+                    <h3>Ручная ковка</h3>
+                    <p>Каждый элемент создается мастером вручную, без конвейера.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">📐</div>
+                    <h3>Индивидуальный проект</h3>
+                    <p>Сделаем эскиз по вашему желанию бесплатно.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Пожизненная гарантия</h3>
+                    <p>Мы уверены в качестве металла и сварки.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🚚</div>
+                    <h3>Доставка и монтаж</h3>
+                    <p>Привезем и установим в любой день.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАЯВКИ -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="order-wrapper">
+                <div class="order-text">
+                    <h2>Оставьте заявку <br><span>на бесплатный расчет</span></h2>
+                    <p>Руслан, мы перезвоним через 15 минут и обсудим все детали</p>
+                </div>
+                <form class="order-form" id="contactForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                    <small>Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</small>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Кованый Стиль. Все права защищены.</p>
+            <p>Сделано с душой и железом ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Подключаем скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>
